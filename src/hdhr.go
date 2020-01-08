@@ -52,7 +52,7 @@ func getCapability() (xmlContent []byte, err error) {
 	capability.Device.Manufacturer = "Silicondust"
 	capability.Device.ModelName = "HDTC-2US"
 	capability.Device.ModelNumber = "HDTC-2US"
-	capability.Device.SerialNumber = ""
+	capability.Device.SerialNumber = System.DeviceID
 	capability.Device.UDN = "uuid:" + System.DeviceID
 
 	output, err := xml.MarshalIndent(capability, " ", "  ")
